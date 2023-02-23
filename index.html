@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css.css"></style>
+    <title>test</title>
+</head>
+<body>
+    <h1>test de preguntas para ver si me conoces</h1>
+
+    <div class="cuadro">
+        <span id="texto">
+          BUENA SUERTE !!!
+        </span>
+
+     <div id="contenedor">
+                 <img id="boton" src="" onclick="miFuncion()">
+                    
+               <img id="boton1" src="" onclick="miFuncion1()">
+
+               <img id="boton2" src="" onclick="miFuncion2()">
+              
+        </div>
+    </div>
+
+    <button id="boton" onclick="ejecutar()">⏩</button>
+<div id="direct">
+    <span id="punt"> BUENAS  <p id="puntage"> </p></span>
+    <span id="punt1"> MALAS  <p id="puntage1"> </p></span>
+</div>
+
+    <script>
+
+        const botonImg = document.getElementById('boton');
+         let botonImg1 = document.getElementById('boton1');
+         let botonImg2 = document.getElementById('boton2');
+
+        let conte = document.getElementById('puntage')
+        let conte1 = document.getElementById('puntage1')
+       
+         let puntos= 0
+         let fallos= 0
+        let valor = 0
+        let contador = 0;
+        let disable = document.getElementById('texto');
+
+       
+
+        function ejecutar() {
+              switch (contador) {
+        case 0:
+             disable.textContent = `${"1- cual es mi comida favoriata"}`;
+           
+
+              // Establece la fuente de la imagen usando setAttribute
+               botonImg.setAttribute('src', './img.jfif');
+              botonImg1.setAttribute('src', './img1.jfif');
+               botonImg2.setAttribute('src', './img2.jfif');
+
+             
+
+            break;
+        case 1:
+         if (valor == 1){
+                alert("es correcto")
+                puntos ++
+                
+              }else{
+                alert("es falso")
+                fallos ++
+              }
+
+            disable.textContent = `${"2- cual es mi bebida favorita"}`;
+             botonImg.setAttribute('src', './img.jfif');
+              botonImg1.setAttribute('src', './img1.jfif');
+               botonImg2.setAttribute('src', './img2.jfif');
+            break;
+        case 2:
+            disable.textContent = `${"3- que es lo que mas me gusta hacer"}`;
+            break;
+         case 3:
+            disable.textContent = `${"4- En que soy mejor? "}`;
+            break;
+         case 4:
+            disable.textContent = `${"5- cual es mi transporte favorito"}`;
+            break;
+         case 5:
+            disable.textContent = `${"6- Que musica escucho?"}`;
+            break;
+         case 6:
+            disable.textContent = `${"7- Que me gusta aprender?"}`;
+            break;
+         case 7:
+            disable.textContent = `${"8- Cual de estas es mi favorito?"}`;
+            break;
+        case 8:
+            disable.textContent = `${"9- Cual escogeria yo?"}`;
+            break;
+         case 9:
+            disable.textContent = `${"10- Quien es el amor de mi vida"}`;
+            break;
+        default:
+              
+            disable.textContent = `${"TU PUNTAGE ES"}`;
+            
+            break;
+    }
+            contador++;
+            conte.textContent = ` ${puntos}`;
+            conte1.textContent = ` ${fallos}`;
+            
+        }
+
+
+
+
+
+function miFuncion() {
+            valor =1
+
+}
+function miFuncion1() {
+            valor =2
+
+}
+
+function miFuncion2() {
+            valor =3
+
+}
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
