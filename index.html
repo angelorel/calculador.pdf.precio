@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./text.css">
+    <title>test</title>
+</head>
+<body onload="start()">
+    <h1>test de preguntas para ver si me conoces</h1>
+
+    <div class="cuadro">
+        <span id="texto">
+          BUENA SUERTE !!!
+        </span>
+
+     <div id="contenedor">
+                 <img id="boton" src="" onclick="miFuncion()">
+                    
+               <img id="boton1" src="" onclick="miFuncion1()">
+
+               <img id="boton2" src="" onclick="miFuncion2()">
+              
+        </div>
+    </div>
+
+    <button id="boton" onclick="ejecutar()">⏩</button>
+<div id="direct">
+    <span id="punt"> BUENAS  <p id="puntage"> </p></span>
+    <span id="punt1"> MALAS  <p id="puntage1"> </p></span>
+</div>
+
+    <script>
+        var ini = document.getElementById('contenedor')
+        function start() {
+            
+            ini.style.display="none"
+
+        }
+
+        const botonImg = document.getElementById('boton');
+         let botonImg1 = document.getElementById('boton1');
+         let botonImg2 = document.getElementById('boton2');
+
+        let conte = document.getElementById('puntage')
+        let conte1 = document.getElementById('puntage1')
+       
+         let puntos= 0
+         let fallos= 0
+        let valor = 0
+        let contador = 0;
+        let disable = document.getElementById('texto');
+
+       
+
+        function ejecutar() {
+            ini.style.display=""
+              switch (contador) {
+        case 0:
+             disable.textContent = `${"1- cual es mi comida favoriata"}`;
+           
+
+              // Establece la fuente de la imagen usando setAttribute
+               botonImg.setAttribute('src', './img/img.jfif');
+              botonImg1.setAttribute('src', './img/img1.jfif');
+               botonImg2.setAttribute('src', './img/img2.jfif');
+
+             
+
+            break;
+    case 1:
+         if (valor == 1){
+               
+                puntos ++
+                
+              }else{
+                
+                fallos ++
+              }
+
+            disable.textContent = `${"2- cual es mi bebida favorita"}`;
+             botonImg.setAttribute('src', './img/img01.jfif');
+              botonImg1.setAttribute('src', './img/img11.png');
+               botonImg2.setAttribute('src', './img/img12.jpg');
+            break;
+    case 2:
+    if (valor == 1){
+               
+                puntos ++
+                
+              }else{
+                
+                fallos ++
+              }
+
+            disable.textContent = `${"3- que es lo que mas me gusta hacer"}`;
+             botonImg.setAttribute('src', './img/img0010.jfif');
+              botonImg1.setAttribute('src', './img/img0001.jpg');
+               botonImg2.setAttribute('src', './img/img0000.jfif');
+
+            break;
+           
+    case 3:
+       if (valor == 3){
+               
+                puntos ++
+                
+              }else{
+                
+                fallos ++
+              }
+            disable.textContent = `${"4- En que soy mejor? "}`;
+              botonImg.setAttribute('src', './img/0010.jfif');
+              botonImg1.setAttribute('src', './img/0000.webp');
+               botonImg2.setAttribute('src', './img/0001.jpg');
+            break;
+
+            
+ case 4:
+  if (valor == 2){
+               
+                puntos ++
+                
+              }else{
+                
+                fallos ++
+              }
+            disable.textContent = `${"5- cual es mi transporte favorito"}`;
+               botonImg.setAttribute('src', './img/descarga1.jfif');
+              botonImg1.setAttribute('src', './img/descarga2.jfif');
+               botonImg2.setAttribute('src', './img/descarga3.jfif');
+            break;
+case 5:
+  if (valor == 3){
+               
+                puntos ++
+                
+              }else{
+                
+                fallos ++
+              }
+            disable.textContent = `${"6- Que musica escucho?"}`;
+               botonImg.setAttribute('src', './img/musica1.jfif');
+              botonImg1.setAttribute('src', './img/musica.jpg');
+               botonImg2.setAttribute('src', './img/musica2.jfif')
+            break;
+    case 6:
+     if (valor == 1){
+               
+                puntos ++
+                
+              }else{
+                
+                fallos ++
+              }
+            disable.textContent = `${"7- Que me gusta aprender?"}`;
+            botonImg.setAttribute('src', './img/apre1.jfif');
+              botonImg1.setAttribute('src', './img/apre.jfif');
+               botonImg2.setAttribute('src', './img/apre2.jfif')
+            break;
+    case 7:
+     if (valor == 1){
+               
+                puntos ++
+                
+              }else{
+                
+                fallos ++
+              }
+            disable.textContent = `${"8- Cual de estos es mi favorito?"}`;
+             botonImg.setAttribute('src', './img/juego2.jfif');
+              botonImg1.setAttribute('src', './img/juego1.jfif');
+               botonImg2.setAttribute('src', './img/juego.jfif')
+            break;
+case 8:
+  if (valor == 3){
+               
+                puntos ++
+                
+              }else{
+                
+                fallos ++
+              }
+            disable.textContent = `${"9- Cual escogeria yo?"}`;
+                  botonImg.setAttribute('src', './img/cel2.jfif');
+              botonImg1.setAttribute('src', './img/cel1.png');
+               botonImg2.setAttribute('src', './img/cel.png')
+
+            break;
+ case 9:
+   if (valor == 2){
+               
+                puntos ++
+                
+              }else{
+                
+                fallos ++
+              }
+            disable.textContent = `${"10- Quien es el amor de mi vida"}`;
+                  botonImg.setAttribute('src', './img/foto2.jfif');
+              botonImg1.setAttribute('src', './img/foto1.jfif');
+               botonImg2.setAttribute('src', './img/foto.jfif')
+
+            break;
+
+        default:
+        if (valor == 1){
+               
+                puntos ++
+                
+              }else{
+                
+                fallos ++
+              }
+              ini.style.display="none" 
+            disable.textContent = `${"tu nota es de " + " " +puntos}  `;
+            
+            break;
+    }
+            contador++;
+            conte.textContent = ` ${puntos}`;
+            conte1.textContent = ` ${fallos}`;
+
+             boton.classList.remove("seleccionado");
+             boton1.classList.remove("seleccionado");
+             boton2.classList.remove("seleccionado");
+            
+        }
+
+
+
+var boton = document.getElementById("boton");
+ var boton1 = document.getElementById("boton1");
+ var boton2 = document.getElementById("boton2");
+
+function miFuncion() {
+            valor =1
+    
+  boton.classList.add("seleccionado");
+  boton1.classList.remove("seleccionado");
+boton2.classList.remove("seleccionado");
+
+}
+function miFuncion1() {
+            valor =2
+            
+  boton.classList.remove("seleccionado");
+  boton1.classList.add("seleccionado");
+boton2.classList.remove("seleccionado");
+
+}
+
+function miFuncion2() {
+            valor =3
+           
+   boton.classList.remove("seleccionado");
+  boton1.classList.remove("seleccionado");
+boton2.classList.add("seleccionado");
+
+}
+
+
+
+
+    </script>
+</body>
+</html>
+
+
+
