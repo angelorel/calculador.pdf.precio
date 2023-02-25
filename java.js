@@ -300,7 +300,6 @@ case 16:
                 
                 fallos ++
               }
-                 var boton = document.getElementById("miBoton");
                  boton.disabled = true;
               ini.style.display="none" 
             disable.textContent = `${"tu nota es de " + " " +puntos}  `;
