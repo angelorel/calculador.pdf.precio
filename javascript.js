@@ -42,20 +42,26 @@ document.addEventListener("DOMContentLoaded", function() {
 
         await pagina.render(renderContext).promise;
 
-        // Verificar si todos los píxeles de la página son en escala de grises
+        // Verificar el porcentaje de píxeles en color y blanco y negro
         var imageData = context.getImageData(0, 0, canvas.width, canvas.height).data;
-        var isBlackAndWhite = true;
+        var totalPixels = imageData.length / 4; // Cada píxel tiene 4 componentes (RGBA)
 
+        var colorPixels = 0;
+        var blackAndWhitePixels = 0;
         for (var j = 0; j < imageData.length; j += 4) {
           var r = imageData[j];
           var g = imageData[j + 1];
           var b = imageData[j + 2];
 
-          if (r !== g || g !== b) {
-            isBlackAndWhite = false;
-            break;
+          if (r === g && g === b) {
+            blackAndWhitePixels++;
+          } else {
+            colorPixels++;
           }
         }
+
+        var colorPercentage = (colorPixels / totalPixels) * 100;
+        var blackAndWhitePercentage = (blackAndWhitePixels / totalPixels) * 100;
 
         // Crear una fila en la tabla para mostrar el resultado de cada página
         var rowNumPag = document.createElement('tr');
@@ -64,23 +70,28 @@ document.addEventListener("DOMContentLoaded", function() {
         var contentCell = document.createElement('td');
 
         pageNumberCell.textContent = i;
-        contentCell.textContent = isBlackAndWhite ? 'Blanco y negro' : 'Color';
+        if (blackAndWhitePercentage >= 95) {
+          contentCell.textContent = 'Blanco y negro';
+          countBlancoYNegro++;
+        } else {
+          if (colorPercentage >= 5) {
+            contentCell.textContent = 'Color';
+            countColor++;
+          } else {
+            contentCell.textContent = 'Blanco y negro';
+            countBlancoYNegro++;
+          }
+        }
 
         rowNumPag.appendChild(pageNumberCell);
         rowConte.appendChild(contentCell);
-
-        if (isBlackAndWhite) {
-          countBlancoYNegro++;
-        } else {
-          countColor++;
-        }
 
         tbodyNumPag.appendChild(rowNumPag);
         tbodyConte.appendChild(rowConte);
       }
 
       document.getElementById('total-blanco-negro').textContent = countBlancoYNegro.toString();
-      document.getElementById('total-pag-color').textContent = parseInt(countColor).toString();
+      document.getElementById('total-pag-color').textContent = countColor.toString();
 
       var totalPrecioBK = (countBlancoYNegro * precioBK).toFixed(2);
       var totalPrecioColor = (countColor * precioColor).toFixed(2);
