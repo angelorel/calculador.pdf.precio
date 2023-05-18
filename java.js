@@ -22,7 +22,7 @@ document.addEventListener("keydown", function(e) {
         alert("No se puede tomar una captura de pantalla de esta página.");
     }
 });
-       
+       hhg
         function start() {
             
             ini.style.display="none"
