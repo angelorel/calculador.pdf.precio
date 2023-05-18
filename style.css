@@ -1,0 +1,233 @@
+ body {
+      font-family: Arial, sans-serif;
+     background-color: #cec9c8;
+      font-size: 16px;
+      margin: 40;
+      padding: 15;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    #resultados {
+      margin-bottom: 20px;
+    }
+    #resultados table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    #resultados th,
+    #resultados td {
+      padding: 8px;
+      border: 1px solid #ccc;
+      background-color: #f2f2f2;
+      color: #333;
+    }
+    #resultados th {
+      background-color: #ddd;
+    }
+    #total-resultados {
+   border: 1px solid #ccc;
+    padding: 3px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 648px;
+    height: 669px;
+    margin-left: 25px;
+    border-radius: 10px;
+    }
+    #total-resultados span {
+     padding: 10px;
+      margin-bottom: 10px;
+      color: #555;
+      text-align: center;
+      display: flex;
+      justify-content: space-between
+
+    }
+ #resultados {
+  display: flex;
+  justify-content: space-between;
+}
+
+#num_pag,
+#conte {
+  width: 50%;
+}
+
+.left,
+.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+table {
+  width: 100%;
+}
+
+th.combined {
+  text-align: center;
+}
+#titulos{
+    display: flex;
+    padding: 5px;
+    border: solid 2px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: space-around;
+    background-color: #e2ffb6;
+    font-size: 25px;
+
+}
+
+#titulos div{
+  
+    margin-left: -5px;
+align-items: center;
+text-align: center;
+    
+}
+h1{
+    align-items: center;
+    text-align: center;
+}
+
+#botones {
+ margin-top: 22px;
+    background-color: #53b58f73;
+    padding: 34px;
+    width: 590px;
+    margin-left: 25px;
+    font-size: 25px;
+    border-radius: 25px;
+
+}
+
+button{
+        width: 127px;
+    height: 40px;
+    background-color: #8aff3b8f;
+    font-size: 19px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+input{
+       width: 484px;
+    height: 40px;
+}
+
+ #input-pdf {
+   
+           font-size: 21px;
+    padding: 4px 7px;
+    background-color: #c3defa;
+    border-radius: 10px;
+}
+.cuadrito{
+    border: solid  1px;
+    width: 60px;
+    height: 2px;
+    border-radius: 3px;
+    padding: 5px;
+   margin-left: 25px;
+    border: 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+}
+.text{
+    font-size: 25px;
+   
+
+}
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    height: 20px;0
+    margin-left: 10px;
+
+
+
+
+
+}
+#contenedor_principal{
+    display: flex;
+    margin-left: 50px;
+}
+#contenedor_1{
+    align-items: center;
+    width: 540px;
+    height: 100px;
+}
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 45px;
+    width: 500px;
+
+  }
+#contenedor_1{
+    display: none;
+}
+  .title {
+        font-size: 24px;
+      font-weight: bold;
+      margin: 20px;
+      text-align: center;
+  }
+
+  #resultados th,
+  #resultados td {
+    padding: 6px;
+  }
+
+  #total-resultados {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    height: auto;
+
+  }
+
+  #total-resultados span {
+    padding: 8px;
+    margin-bottom: 8px;
+    font-size: 18px;
+  }
+
+  #botones {
+    width: 88%;
+    padding: 20px;
+    margin-left: 0;
+    font-size: 25px;
+  }
+
+  input {
+  
+    width: 198px;
+    height: 37px;
+
+  }
+
+  .cuadrito {
+        width: 32px;
+    height: 13px;
+    font-size: 16px;
+    margin-left: 15px;
+  }
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    height: 20px;0
+    margin-left: 10px;
+
+}
+h1{
+    display: flex;
+    font-size: 16px;
+}
