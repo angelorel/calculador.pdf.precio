@@ -38,7 +38,7 @@ document.getElementById('siBtn').addEventListener('click', function() {
     }, 3000);
   // Redireccionar después de 5 segundos
 setTimeout(function() {
-    window.location.href = 'https://wa.me/+50363077486/?text=dije%20que%20si%20jajajajaja'; // Reemplaza con la URL deseada
+    window.location.href = 'https://wa.me/+50369829884/?text=dije%20que%20si%20jajajajaja'; // Reemplaza con la URL deseada
 }, 3000);
 });
 
@@ -222,7 +222,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
         
         case 14:
            
-            document.getElementById('noBtn').innerHTML = 'NO... ya di que si Valeria';
+            document.getElementById('noBtn').innerHTML = 'NO... ya di que si Erika';
             document.getElementById('noBtn').style.backgroundColor = '#F1330A';
 
             // Hacer que el botÃ³n "SÃ­" crezca
