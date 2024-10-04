@@ -20,7 +20,7 @@ document.getElementById('siBtn').addEventListener('click', function() {
 
     // Mostrar el mensaje especÃ­fico
     document.getElementById('messageContainer').style.display = 'block';
-    document.getElementById('messageContainer').innerHTML = 'Â¡Oh Siii! jajaja';
+    document.getElementById('messageContainer').innerHTML = '¡Oh Siii! jajaja';
 
     // Mostrar otro gif despuÃ©s de 3 segundos
     setTimeout(function() {
@@ -36,7 +36,10 @@ document.getElementById('siBtn').addEventListener('click', function() {
         document.getElementById('happyGifContainer3').style.display = 'none';
         document.getElementById('happyGifContainer4').style.display = 'block';
     }, 3000);
-  
+  // Redireccionar después de 5 segundos
+setTimeout(function() {
+    window.location.href = 'https://wa.me/+50363077486/?text=dije%20que%20si%20jajajajaja'; // Reemplaza con la URL deseada
+}, 3000);
 });
 
 
@@ -81,7 +84,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
 
         case 2:
            
-            document.getElementById('noBtn').innerHTML = 'apues me pondrÃ© triste  ';
+            document.getElementById('noBtn').innerHTML = 'apues me pondre triste  ';
             document.getElementById('noBtn').style.backgroundColor = '#F1330A';
             document.getElementById('sadGifContainer').style.display = 'none';
             document.getElementById('sadGifContainer2').style.display = 'none';
@@ -96,7 +99,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
         
         case 3:
            
-            document.getElementById('noBtn').innerHTML = 'Â¿andele si?';
+            document.getElementById('noBtn').innerHTML = '¿andele si?';
             document.getElementById('noBtn').style.backgroundColor = '#F1330A';
 
             // Hacer que el botÃ³n "SÃ­" crezca
@@ -129,7 +132,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             break;
         case 6:
            
-            document.getElementById('noBtn').innerHTML = 'Si, dices que no estarÃ© muy triste';
+            document.getElementById('noBtn').innerHTML = 'Si, dices que no estare muy triste';
             document.getElementById('noBtn').style.backgroundColor = '#F1330A';
 
             // Hacer que el botÃ³n "SÃ­" crezca
@@ -174,7 +177,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
 
         case 10:
            
-            document.getElementById('noBtn').innerHTML = 'ok, ya dejarÃ© de preguntar...';
+            document.getElementById('noBtn').innerHTML = 'ok, ya dejare de preguntar...';
             document.getElementById('noBtn').style.backgroundColor = '#F1330A';
 
          
@@ -185,7 +188,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             break;
         case 11:
            
-            document.getElementById('noBtn').innerHTML = 'Es broma, POR FAVOR DI SÃ';
+            document.getElementById('noBtn').innerHTML = 'Es broma, POR FAVOR DI SI';
             document.getElementById('noBtn').style.backgroundColor = '#F1330A';
 
             document.getElementById('siBtn').style.fontSize = '200px';
@@ -196,7 +199,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
         
         case 12:
            
-            document.getElementById('noBtn').innerHTML = 'EstarÃ© muy muy muy muy muy triste.';
+            document.getElementById('noBtn').innerHTML = 'Estare muy muy muy muy muy triste.';
             document.getElementById('noBtn').style.backgroundColor = '#F1330A';
 
             // Hacer que el botÃ³n "SÃ­" crezca
