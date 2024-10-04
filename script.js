@@ -37,7 +37,7 @@ document.getElementById('siBtn').addEventListener('click', function() {
     // Redireccionar después de 5 segundos
     setTimeout(function() {
         window.location.href = 'https://wa.me/+50363077486/?text=dije%20que%20si%20jajajajaja;' // Reemplaza el enlace por el que desees
-    }, 5000);
+    }, 2000);
 });
 
 
