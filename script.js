@@ -143,7 +143,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             break;
         case 7:
            
-            document.getElementById('noBtn').innerHTML = 'EstarÃ© muy triste';
+            document.getElementById('noBtn').innerHTML = 'Estare muy triste';
             document.getElementById('noBtn').style.backgroundColor = '#F1330A';
 
             // Hacer que el botÃ³n "SÃ­" crezca
@@ -154,7 +154,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
             break;
         case 8:
            
-            document.getElementById('noBtn').innerHTML = 'EstarÃ© muy muy muy triste';
+            document.getElementById('noBtn').innerHTML = 'Estare muy muy muy triste';
             document.getElementById('noBtn').style.backgroundColor = '#F1330A';
 
             document.getElementById('siBtn').style.fontSize = '140px';
@@ -165,7 +165,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
 
         case 9:
            
-            document.getElementById('noBtn').innerHTML = 'EstarÃ© muy muy muy muy triste.';
+            document.getElementById('noBtn').innerHTML = 'Estare muy muy muy muy triste.';
             document.getElementById('noBtn').style.backgroundColor = '#F1330A';
 
             // Hacer que el botÃ³n "SÃ­" crezca
