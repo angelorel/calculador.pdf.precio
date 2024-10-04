@@ -222,7 +222,7 @@ document.getElementById('noBtn').addEventListener('click', function() {
         
         case 14:
            
-            document.getElementById('noBtn').innerHTML = 'NO... ya di que si Erika';
+            document.getElementById('noBtn').innerHTML = 'NO... ya di que si Lety';
             document.getElementById('noBtn').style.backgroundColor = '#F1330A';
 
             // Hacer que el botÃ³n "SÃ­" crezca
