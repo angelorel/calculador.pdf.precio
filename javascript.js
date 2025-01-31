@@ -46,7 +46,7 @@ const videos = [];
         videoPlayer.play().catch(error => {
             console.error('Error de reproducción:', error);
             const playButton = document.createElement('button');
-            playButton.textContent = 'Haz clic para reproducir';
+            playButton.textContent = 'volarle verga ya';
             playButton.className = 'restart-btn';
             playButton.onclick = () => {
                 videoPlayer.play();
